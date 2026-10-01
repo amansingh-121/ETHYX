@@ -1,0 +1,8 @@
+{
+  "name": "Ethyx Packaging Solution",
+  "description": "Ethyx Packaging Industries — manufacturer and supplier of customized tamper-proof courier bags, HDPE/PP bags, bubble pouches, BOPP tapes, labels and branded e-commerce packaging.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

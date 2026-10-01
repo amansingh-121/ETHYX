@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Ethyx Packaging Solution</title>
+  <meta name="description" content="Learn about Ethyx Packaging Industries — leading manufacturer and supplier of tamper-proof courier bags, HDPE/PP bags, and custom e-commerce packaging." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/motion@11.11.17/dist/motion.js"></script>
+</head>
+<body>
+
+  <!-- Top Marquee Ticker -->
+  <div class="ticker-bar">
+    <div class="ticker-track">
+      <span class="ticker-items">
+        <a href="index.html#products">All Packaging Categories</a><i>+</i>
+        <a href="index.html#products">E-Commerce Branded Packaging</a><i>+</i>
+        <a href="valmo.html">Valmo Authorized Collection</a><i>+</i>
+        <a href="protective.html">Protective Air Cushion Packaging</a><i>+</i>
+        <a href="ldpe_bags.html">Tamper-Proof Courier Bags</a><i>+</i>
+        <a href="bopp_tapes.html">Heavy Duty BOPP Tapes</a><i>+</i>
+        <a href="valmo.html">Industrial Barcode Labels</a><i>+</i>
+      </span>
+      <span class="ticker-items" aria-hidden="true">
+        <a href="index.html#products">All Packaging Categories</a><i>+</i>
+        <a href="index.html#products">E-Commerce Branded Packaging</a><i>+</i>
+        <a href="valmo.html">Valmo Authorized Collection</a><i>+</i>
+        <a href="protective.html">Protective Air Cushion Packaging</a><i>+</i>
+        <a href="ldpe_bags.html">Tamper-Proof Courier Bags</a><i>+</i>
+        <a href="bopp_tapes.html">Heavy Duty BOPP Tapes</a><i>+</i>
+        <a href="valmo.html">Industrial Barcode Labels</a><i>+</i>
+      </span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo" title="Ethyx Packaging Solution">
+        <img src="https://ethyxpackagingsolution.com/assets/Ethyx-Logo-DeSs-_6U.png" alt="Ethyx Logo" class="logo-img" />
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Us</a>
+        <div class="dropdown">
+          <a href="index.html#products" class="drop-toggle">Products <span class="caret">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="index.html#products" style="font-weight:700;color:var(--primary);border-bottom:1px solid var(--border-subtle);margin-bottom:4px;padding-bottom:8px;">📦 All Products Overview</a>
+            <a href="hdpe_pp_bags.html">HDPE/PP Bags</a>
+            <a href="ldpe_bags.html">LDPE Bags</a>
+            <a href="paper_courier.html">Paper Courier Bags</a>
+            <a href="bopp_tapes.html">BOPP Tapes</a>
+            <a href="protective.html">Protective Packaging</a>
+          </div>
+        </div>
+        <a href="ethyx.html">Ethyx</a>
+        <a href="valmo.html">Valmo</a>
+        <a href="contact-us.html">Contact Us</a>
+      </nav>
+      <div class="nav-actions">
+        <!-- 1. Search Icon (Screenshot 3 & 4) -->
+        <button class="header-icon-btn" id="searchBtn" title="Search Products" aria-label="Search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+
+        <!-- 2. User Profile Dropdown (Screenshot 3) -->
+        <div class="header-user-dropdown" id="userMenuWrap">
+          <button class="user-trigger-btn" id="userDropdownBtn" aria-label="Account Menu">
+            <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            <span class="user-trigger-caret">▾</span>
+          </button>
+          <div class="user-popover-menu" id="userDropdownMenu">
+            <div id="unauthMenuItems">
+              <a href="#login" id="menuLoginBtn">Login</a>
+              <a href="#register" id="menuRegisterBtn">Register</a>
+            </div>
+            <div id="authMenuItems" style="display:none;">
+              <div class="user-profile-header">
+                <span id="userMenuLabel">Welcome</span>
+                <strong id="userMenuPhone">+91-XXXXXXXXXX</strong>
+              </div>
+              <a href="wishlist.html">My Wishlist</a>
+              <a href="cart.html">My Cart / RFQ</a>
+              <button type="button" id="menuLogoutBtn" style="color:#ef4444;">Logout</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Wishlist Icon with Black Pill Badge (Screenshot 1, 3 & 4) -->
+        <a href="wishlist.html" class="header-icon-btn" id="headerWishlistBtn" title="Wishlist" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span class="header-badge-pill" id="wishlistBadge">0</span>
+        </a>
+
+        <!-- 4. Cart Icon with Black Pill Badge (Screenshot 2, 3 & 4) -->
+        <a href="cart.html" class="header-icon-btn" id="headerCartBtn" title="Cart" aria-label="Cart">
+          <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <span class="header-badge-pill" id="cartBadge">0</span>
+        </a>
+
+        <!-- Mobile Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+  <section class="page-hero">
+    <div class="container">
+      <h1>About Us</h1>
+      <p>Discover our heritage of precision polymer engineering, state-of-the-art extrusion plants, and dedication to custom brand protection.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container about-grid">
+      <div class="about-text reveal">
+        <span class="eyebrow">Who We Are</span>
+        <h2>We Are Solutions For Your Brand Packaging</h2>
+        <p>Ethyx Packaging Industries is a prominent manufacturer and supplier specializing in a wide range of high-quality packaging products, including customized tamper-proof bags, plain courier bags, HDPE/PP bags, bubble pouches, and more.</p>
+      </div>
+      <div class="about-img reveal">
+        <img src="https://ethyxpackagingsolution.com/assets/About1Img-D8p0_bZH.webp" alt="Ethyx Packaging" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container about-grid">
+      <div class="about-img reveal">
+        <img src="https://ethyxpackagingsolution.com/assets/About2Img-Cb6QECtE.webp" alt="Why choose us" />
+      </div>
+      <div class="about-text reveal">
+        <h2>Why Choose Us</h2>
+        <p>Our products are crafted using advanced technology and premium-grade materials to ensure exceptional quality and compliance with international standards. With the rise of e-commerce and logistics industries, we are proud to introduce Ethyx Packaging Industries as an extension of Bhavna Enterprises. Our new brand is dedicated to meeting the evolving needs of these dynamic sectors. We focus on serving leading brands across various industries, leveraging cutting-edge technology and a dedicated team to deliver innovative solutions.</p>
+        <p>Ethyx Packaging Industries stands out as a leading manufacturer and supplier of a diverse range of packaging products. We are renowned for our commitment to quality, innovation, and customer satisfaction. Choose us for our extensive experience, cutting-edge technology, and dedication to providing packaging solutions that meet your unique needs. With Ethyx Packaging Industries, you get reliability, excellence, and unparalleled service.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Certified Quality</span>
+        <h2>Our Certificate</h2>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <img src="https://ethyxpackagingsolution.com/assets/certificate-5DvCxLyT.webp" alt="ISO 14001:2015 Certificate" />
+          <h3>ISO 14001:2015</h3>
+        </div>
+        <div class="cert-card reveal">
+          <img src="https://ethyxpackagingsolution.com/assets/cerificate_2-CtgycPrU.webp" alt="ISO 9001:2015 Certificate" />
+          <h3>ISO 9001:2015</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Mission, Vision & Values</h2>
+      </div>
+      <div class="mvv-grid">
+        <article class="mvv-card reveal">
+          <h3>Mission</h3>
+          <p>With a commitment to innovation and excellence, we cater to diverse industries by offering bespoke packaging solutions that meet stringent quality standards. Our mission is to consistently deliver superior packaging solutions that not only protect but also enhance the value of our client's products. Through relentless innovation and customer-centricity, we aim to set new benchmarks in the packaging industry, ensuring sustainable growth and customer satisfaction.</p>
+        </article>
+        <article class="mvv-card reveal">
+          <h3>Vision</h3>
+          <p>Our vision is to lead the industry with innovative packaging solutions that set new benchmarks in quality, reliability, and sustainability. We aim to empower businesses across various sectors by delivering customized packaging solutions that enhance product appeal and ensure utmost protection. Committed to excellence, we strive to continuously innovate and evolve, driven by a passion for exceeding customer expectations and contributing positively to the packaging industry's growth and sustainability.</p>
+        </article>
+        <article class="mvv-card reveal">
+          <h3>Value</h3>
+          <p>Committed to excellence, we uphold core values that define our operations and customer relationships. Integrity forms the cornerstone of our business ethos, ensuring transparency and trustworthiness in every interaction. We prioritize innovation, constantly evolving our products to meet dynamic market demands and exceed customer expectations.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- Main Website Footer -->
+  <footer class="footer" id="footer">
+    <div class="container footer-grid">
+      <!-- Col 1: Brand & Credentials -->
+        <div class="footer-brand-col">
+          <img src="https://ethyxpackagingsolution.com/assets/Ethyx-Logo-300-B3qNGeKt.webp" alt="Ethyx Packaging Solution" class="footer-logo" />
+          <p>ETHYX Packaging Industries — Premier manufacturer and nationwide supplier of high-precision tamper-proof courier mailers, BOPP tapes, and co-ex polymer films with over 7+ years of industrial excellence.</p>
+          <div class="footer-badges-row">
+            <span class="footer-badge-tag">🛡️ Valmo Authorized</span>
+            <span class="footer-badge-tag">✓ ISO 9001:2015</span>
+            <span class="footer-badge-tag">📦 Meesho Certified</span>
+          </div>
+          <div>
+            <a href="https://wa.me/919625665613" target="_blank" rel="noopener" class="footer-whatsapp-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 2c-5.508 0-9.986 4.477-9.986 9.984 0 1.761.458 3.483 1.332 5.004l-1.417 5.178 5.305-1.391c1.467.8 3.12 1.223 4.766 1.223 5.508 0 9.985-4.478 9.985-9.984 0-5.507-4.477-9.984-9.985-9.984zm5.795 14.116c-.244.688-1.42 1.26-1.956 1.341-.536.08-1.238.114-3.568-.847-2.973-1.227-4.887-4.249-5.035-4.447-.148-.198-1.205-1.603-1.205-3.056 0-1.454.764-2.17 1.036-2.464.272-.294.595-.367.793-.367.198 0 .396.002.57.01.185.008.433-.07.678.518.254.611.866 2.115.941 2.27.075.155.124.336.025.534-.099.198-.148.322-.297.495-.148.174-.312.388-.445.52-.148.149-.303.31-.13.608.173.297.771 1.272 1.653 2.058 1.135 1.011 2.091 1.325 2.388 1.473.297.148.47.124.643-.074.173-.198.742-.866.94-1.163.198-.297.396-.248.668-.148.272.099 1.729.816 2.026.964.297.148.495.223.57.347.074.124.074.717-.17 1.405z"/></svg>
+              <span>Direct WhatsApp Desk</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4>Quick Links</h4>
+          <a href="about.html">About Ethyx</a>
+          <a href="index.html#products">All Packaging Products</a>
+          <a href="contact-us.html">Contact Engineering Team</a>
+          <a href="contact-us.html">Terms and Conditions</a>
+          <a href="contact-us.html">Privacy Policy</a>
+          <a href="contact-us.html">Return & Refund Policy</a>
+          <a href="contact-us.html">Shipping & Delivery</a>
+        </div>
+
+        <!-- Col 3: Product Lines -->
+        <div>
+          <h4>Product Lines</h4>
+          <a href="index.html#products">Courier Mailer Bags</a>
+          <a href="ethyx.html">ETHYX Branded Series</a>
+          <a href="valmo.html">Valmo Authorized Products</a>
+          <a href="bopp_tapes.html">BOPP Self-Adhesive Tapes</a>
+          <a href="ldpe_bags.html">Tamper-Proof LDPE Bags</a>
+          <a href="hdpe_pp_bags.html">HDPE / PP Poly Bags</a>
+          <a href="paper_courier.html">Eco Paper Mailers</a>
+          <a href="protective.html">Bubble Rolls & Protection</a>
+        </div>
+
+        <!-- Col 4: Corporate Office & Direct Contacts -->
+        <div>
+          <h4>Corporate Office</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📍</span>
+            <div>
+              <strong style="color:#ffffff;display:block;">Headquarters:</strong>
+              <span>5th Floor, Two Horizon Centre, DLF Phase-5, Golf Course Road, Gurugram-122002, Haryana</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">🏭</span>
+            <div>
+              <strong style="color:#ffffff;display:block;">Plant Facility:</strong>
+              <span>Sector 25 Industrial Area, Ballabgarh, Faridabad, Haryana</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            <div>
+              <a href="tel:+919625665613" style="color:#e2e8f0;margin-bottom:2px;">+91-9625665613</a>
+              <a href="tel:+917827124429" style="color:#e2e8f0;margin-bottom:0;">+91-7827124429</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">✉️</span>
+            <div>
+              <a href="mailto:ethyxsolutions@yahoo.com" style="color:#e2e8f0;margin-bottom:0;">ethyxsolutions@yahoo.com</a>
+            </div>
+          </div>
+
+          <div class="socials">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://wa.me/919625665613" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24"><path d="M12.031 2c-5.508 0-9.986 4.477-9.986 9.984 0 1.761.458 3.483 1.332 5.004l-1.417 5.178 5.305-1.391c1.467.8 3.12 1.223 4.766 1.223 5.508 0 9.985-4.478 9.985-9.984 0-5.507-4.477-9.984-9.985-9.984zm5.795 14.116c-.244.688-1.42 1.26-1.956 1.341-.536.08-1.238.114-3.568-.847-2.973-1.227-4.887-4.249-5.035-4.447-.148-.198-1.205-1.603-1.205-3.056 0-1.454.764-2.17 1.036-2.464.272-.294.595-.367.793-.367.198 0 .396.002.57.01.185.008.433-.07.678.518.254.611.866 2.115.941 2.27.075.155.124.336.025.534-.099.198-.148.322-.297.495-.148.174-.312.388-.445.52-.148.149-.303.31-.13.608.173.297.771 1.272 1.653 2.058 1.135 1.011 2.091 1.325 2.388 1.473.297.148.47.124.643-.074.173-.198.742-.866.94-1.163.198-.297.396-.248.668-.148.272.099 1.729.816 2.026.964.297.148.495.223.57.347.074.124.074.717-.17 1.405z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 ETHYX Packaging Solution Pvt. Ltd. All rights reserved. ISO 9001:2015 Certified Manufacturer.</p>
+        <div class="footer-pay-badges">
+          <span>🔒 256-Bit SSL Encrypted</span>
+          <span>·</span>
+          <span class="footer-pay-badge">UPI</span>
+          <span class="footer-pay-badge">NetBanking</span>
+          <span class="footer-pay-badge">Cards</span>
+          <span class="footer-pay-badge">Razorpay</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
